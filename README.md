@@ -15,22 +15,22 @@
 
 - git config --global core.autocrlf true
 
-### VSCode 터미널 설정(git Bash)
+### VSCode 터미널 설정(Git Bash)
 
-- 설정 > teminal default profle 검색 > Git Bash 선택
+- 설정 > terminal default profile 검색 > Git Bash 선택
 - 목록에 Git Bash 없을 시 VSCode 재시작
 - 터미널 열기, Ctrl + ` 또는 Ctrl + j 또는 마우스 오른쪽 클릭 통합터미널 열기
 
-### Global Gir 사용자 설정
+### Global Git 사용자 설정
 
 - gitHub 가입시 설정한 "이메일", "아이디" 사용
 - 아이디, 이메일 설정
 - git config --global user.name "깃허브 가입시 아이디"
-- git config --global user.emaul "깃허브 가입시 이메일"
+- git config --global user.email "깃허브 가입시 이메일"
 
 - 참고: 터미널 청소하기 명령어 clear
 
---------------------------- 위 내용은 최초 한 번만 설정 -------------------------------
+----------------- 위 내용은 최초 한 번만 설정 ----------------
 
 ### gitHub repository 생성하기
 
@@ -42,8 +42,20 @@
 - 수정 내용 커밋 하기
   - git commit -m "반응형 웹페이지 실습 프로젝트 최초 생성"
 - gitHub repository에 최초 업로드
-- git status
+- 수정 내용 커밋 하기
+  - git commit -m "반응형 웹페이지 실습 프로젝트 최초 생성"
+  - git status
 - gitHub repository 업데이트
-- git add
-- git commit -m "커밋 내용"
-- git push origin main
+  - git add .
+  - git commit -m "커밋 내용"
+  - git push origin main
+
+### 레포지토리 클론하기
+
+- 레포지토리와 같은 이름의 폴더 생성
+- git clone "본인 레포토리 주소" ./
+
+### 최종 코드로 업데이트 하기
+
+- git fetch
+- git merge origin/main
