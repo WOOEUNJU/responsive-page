@@ -59,3 +59,4 @@
 
 - git fetch
 - git merge origin/main
+  (시작하기 전에 입력)
